@@ -1,5 +1,5 @@
-class Solution(object):
-    def search(self, nums, target):
+class Solution:
+    def search(self, nums: list[int], target: int) -> int:
         left=0
         right=len(nums)-1
 
@@ -13,9 +13,3 @@ class Solution(object):
             else:
                 right=mid-1
         return -1
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
-        
